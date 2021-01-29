@@ -1,0 +1,14 @@
+.the-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  .nickname {
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  .toggle,
+  .el-icon-caret-bottom {
+    cursor: pointer;
+  }
+}

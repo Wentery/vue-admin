@@ -1,0 +1,45 @@
+@import '~@/assets/scss/element-variables.scss';
+.side-bar {
+  user-select: none;
+  .logo-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    .logo {
+      width: 20px;
+      height: 20px;
+    }
+    .el-icon-s-help {
+      font-size: 20px;
+      color: #fff;
+      margin-right: 10px;
+    }
+    .name {
+      font-size: 18px;
+      font-weight: 900;
+      color: #f2f2f2;
+    }
+  }
+  .logo-name {
+    i {
+      color: #fff !important;
+    }
+  }
+  .is-active {
+    color: #fff !important;
+    background-color: $--color-primary !important;
+  }
+  .el-menu {
+    .el-submenu {
+      .el-menu-item {
+        padding-left: 50px !important;
+      }
+    }
+  }
+  .el-menu-item.is-disabled {
+    cursor: auto !important;
+    opacity: 1 !important;
+  }
+}
