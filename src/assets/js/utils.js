@@ -110,6 +110,23 @@ function isPhone (phone) {
   const reg = /^1[3456789]\d{9}$/
   return reg.test(phone)
 }
+// 判断两个对象是否一样
+function isObejctDiff (obj1, obj2) {
+  const keys1 = Object.keys(obj1)
+  const keys2 = Object.keys(obj2)
+  if (keys1.length !== keys2.length) {
+    return true
+  }
+  for (let index = 0; index < keys1.length; index++) {
+    const key = keys1[index]
+    if (!keys2.includes(key)) {
+      return true
+    } else if (obj1[key] !== obj2[key]) {
+      return true
+    }
+  }
+  return false
+}
 
 const screen = new ScreenController()
 const format = new DateFormat()
@@ -119,5 +136,6 @@ export {
   format,
   loading,
   Auth,
-  isPhone
+  isPhone,
+  isObejctDiff
 }

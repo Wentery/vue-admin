@@ -1,8 +1,8 @@
-import Menu from '@/components/common/menu/TheMenu.vue'
-import Header from '@/components/common/header/TheHeader.vue'
-import EmployerList from '@/views/system/employers/EmployerList.vue'
-import TheAbout from '@/views/system/about/TheAbout.vue'
-import TheBatch from '@/views/system/about/TheBatch.vue'
+const Menu = () => import('@/components/common/menu/TheMenu.vue')
+const Header = () => import('@/components/common/header/TheHeader.vue')
+const EmployerList = () => import('@/views/system/employers/EmployerList.vue')
+const TheAbout = () => import('@/views/system/about/TheAbout.vue')
+const TheBatch = () => import('@/views/system/about/TheBatch.vue')
 
 export default {
   'aside-menu': Menu,

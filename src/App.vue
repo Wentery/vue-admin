@@ -5,8 +5,20 @@
 </template>
 
 <script>
+import { isObejctDiff } from '@/assets/js/utils'
 export default {
-  name: 'App'
+  name: 'App',
+  created () {
+    const a = {
+      id: 2,
+      name: 'jj'
+    }
+    const b = {
+      id: 1,
+      name: 'jlj'
+    }
+    console.log(isObejctDiff(a, b))
+  }
 }
 </script>
 
