@@ -62,3 +62,9 @@ table {
 .clearfix {
   *zoom: 1;
 }
+
+// element-ui 样式修改
+
+.el-dropdown-menu {
+  min-width: 100px !important;
+}
